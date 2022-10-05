@@ -17,3 +17,7 @@ https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-
 - [ ] Run `idf.py -p <PORT> -b 112500 flash` to build and flash the code to the board (Takes a couple of minutes)
 - [ ] If you don't know the port, go to Windows' *Device Manager* and check under *Ports (COM & LPT)*
 - [ ] 
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
