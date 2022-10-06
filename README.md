@@ -7,8 +7,8 @@ Project developed in ESP-IDF environment on Windows 10.
 ## Step by step guide:
 ### How to connect the camera to the Fuel Gauge
 The connectors of both units are different. The Fuel Gauge connector doesn't correspond with the *Grove* connector of the camera, so the cables have to be switched in positions to match each connector. If we look at both devices with the connector side facing us the pinout is as follows, from left to right:
-- Fuel Gauge: SDC, SDL, GND, VCC
-- Camera: GND, VCC, SDL, SDC
+- Fuel Gauge: SCL, SDA, GND, VCC
+- Camera: GND, VCC, SDA, SCL
 
 In the image below, we can see how to connect them:
 ![This is an image](images/connection.png)
@@ -28,5 +28,5 @@ https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-
     - To test that this works, run `idf.py menuconfig` and check that you have the option *Arduino Condiguration* in the menu
     - Press exit to close menuconfig
     
-- Run `idf.py -p <PORT> -b 112500 flash monitor` to build, flash the code to the board (Takes a couple of minutes) and open the serial monitor in one command
+- Run `idf.py -p <PORT> -b 112500 flash monitor` to build, flash the code to the board (takes a couple of minutes) and open the serial monitor in one command
     - If you don't know the port, go to Windows' *Device Manager* and check under *Ports (COM & LPT)*
